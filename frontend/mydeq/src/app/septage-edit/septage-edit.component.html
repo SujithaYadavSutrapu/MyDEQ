@@ -1,0 +1,38 @@
+<p>septage-edit works!</p>
+<div>
+    <p class="main">Septage Hauler License Application</p>
+    <p class="info1">Complete the following to submit the application.</p>
+</div>
+
+<div class="heading">
+    <div>
+        <h2>Section Name</h2>
+        <ul>
+            <li class="section-div" *ngFor="let section of sections; let i = index">
+                <p class="text">{{section.name}}</p>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Status</h2>
+        <ul>
+            <li class="section-div" *ngFor="let section of sections; let i = index">
+                <p class="text">{{section.status}}</p>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Edit</h2>
+        <ul>
+            <li class="section-div" *ngFor="let section of sections; let i = index">
+                <img src="../../assets/edit.svg" alt="edit" (click)="changeStatus(i)" />
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div>
+    <button class="certify" [disabled]="!isCertifyButtonEnabled()">Continue to Certify</button>
+</div>
