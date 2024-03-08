@@ -3,5 +3,6 @@ import GetMyStuffApplicationController from '../controller/GetMyStuffApplication
 const router=express.Router();
 
 router.get('/getmystuffapplication',GetMyStuffApplicationController.getMyStuffApplications);
+router.get("/filterMyStuffApplication",GetMyStuffApplicationController.filterMyStuffApplications)
 
 export default router;
