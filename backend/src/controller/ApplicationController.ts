@@ -113,6 +113,30 @@ async searchApplication(req: Request, res: Response) {
     }
 }
 
+async deleteApplication(req: Request, res:Response){
+    const { application_id } = req.params;
+
+    if (!application_id) {
+        return res.status(400).json({ error: 'Application ID is required' });
+    }
+
+    try {
+        const params = {
+            TableName: 'application',
+            Key: {
+                pk: application_id,
+                sk: 'APPLICATION' 
+            }
+        };
+
+        const data = await dynamoDB.delete(params).promise();
+        res.json({ message: 'Application deleted successfully' });
+    } catch (error) {
+        console.error('Error deleting application:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+}
+
 }
 
 export default new ApplicationController();
