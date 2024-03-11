@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="nav rounded-top">
+      <!-- <img src="/project/src/assets/flag.png" style="width: 35px; margin-left: 10px;" alt="Flag"> -->
+      <p></p>
+      <h2>myDEQ</h2> 
+    </div>
+  
+    <div class="primary">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <div class="header">
+            <h1>Get a Crushing & Screening General Permit</h1>
+            <hr>
+          </div>
+  
+          <div class="question">
+            <label for="firstName">
+              The coverage for your operation under this general permit wil expire on <span id="expirationDate">{{ expirationDate }}</span>.* Do you wish to continue with this permit application?
+            </label>
+          </div>
+          
+          <div class="instruction">
+            Select one option and click Continue
+          </div>
+  
+          <div class="options">
+            <input type="radio" id="option1" name="option" value="option1" formControlName="option" (click)="displayText()">
+            <label for="option1">Yes</label><br>
+            <div class="showText" *ngIf="showText">
+              I wish to continue and understand that this permit will expire on 
+               <span id="expirationDate">{{ expirationDate }}</span> </div>
+            <input type="radio" id="option2" name="option" value="option2" formControlName="option"  (click)="displayText()">
+            <label for="option2">No</label>
+        </div>
+
+        <br><br>
+          <div class="instruction">
+              * You will be required to renew your coverage when the general permit expires or terminate your permit at that time.
+          </div>
+          
+          <div class="footer">
+            <button class="btn btn-secondary rounded btn-lg" (click)="onPrevious()">Previous</button>
+            <button class="btn btn-primary rounded btn-lg" (click)="onSubmit()">Next</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  

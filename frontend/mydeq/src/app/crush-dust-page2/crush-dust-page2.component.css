@@ -1,0 +1,30 @@
+
+.dark-blue {
+    color: darkblue;
+    font-size: 15px;
+    
+  }
+  
+  .light-green {
+    background-color: #e2e8ce;
+    padding-left: 10px;
+    width: fit-content;
+  }
+  
+  .small-text {
+    font-size: 15px;
+    padding: 12px 5px;
+
+  }
+  .name{
+    color: rgb(0, 0, 0);
+    margin-bottom: 3px;
+    font-size: 18px;
+  }
+  .head{
+    color: #4C5E6A;
+    font-size: 18px;
+  }
+  .instruction{
+    font-size: 15px;
+  }

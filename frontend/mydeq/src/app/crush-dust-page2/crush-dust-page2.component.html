@@ -1,0 +1,63 @@
+
+<div class="container">
+  <div class="nav rounded-top">
+    <p></p>
+
+    <h2>myDEQ</h2> 
+  </div>
+
+  <div class="primary">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <div class="header">
+          <h1>Get a Crushing & Screening General Permit</h1>
+          <hr> 
+        </div>
+
+        <div class="question">
+          <label>
+            A General Permit at the location you entered limits you to the throughputs indicated below:
+          
+        <div class="light-green">
+          <h4 class="head">MARICOPA County</h4>  
+          <div class="name">
+            Standalone Crushing & Screening:
+          </div>
+          <div>
+            <span class="small-text">Tons per day:
+             <span class="dark-blue">4000</span> </span>
+          </div>
+        <br>
+        <div class="name">
+          Crushing & Screening with a Concrete Batch Plant:
+        </div>
+          <div>
+            <span class="small-text">Crushing & Screening Tons per day:  <span class="dark-blue">4000</span></span>
+          </div>
+          <div>
+            <span class="small-text">Crushing & Screening Cubic yards per day: <span class="dark-blue">1000</span></span>
+          </div>
+        </div>  </label>
+        <div>
+          <label for="firstName"><br>
+Are you willing to limit the production of your plant to these quantities?
+          </label>       
+        </div>
+        <div class="instruction"  style="padding-top: 5px;">
+          Select one option and click Continue
+        </div>
+        <div class="options">
+          <input type="radio" id="option1" name="option" value="option1" formControlName="option">
+          <label for="option1">Yes</label><br>
+          <input type="radio" id="option2" name="option" value="option2" formControlName="option">
+          <label for="option2">No</label>
+        </div>  
+       </div>
+        <div class="footer">
+          <button class="btn btn-secondary rounded btn-lg" (click)="onPrevious()">Previous</button>
+          <button class="btn btn-primary rounded btn-lg" (click)="onSubmit()">Next</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
