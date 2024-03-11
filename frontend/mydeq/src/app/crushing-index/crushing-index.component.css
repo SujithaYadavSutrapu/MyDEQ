@@ -1,0 +1,81 @@
+.Red {
+    color: rgb(178, 0, 0);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main {
+    font-size: xx-large;
+    color: #119916;
+}
+
+ol {
+    list-style: none;
+    counter-reset: steps;
+}
+
+ol li {
+    counter-increment: steps;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust this spacing as needed */
+}
+
+ol li::before {
+    content: counter(steps);
+    background: #ff6f00;
+    color: white;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; /* Adjust this spacing as needed */
+}
+
+.section-div p {
+    margin: 0;
+}
+
+/* .back-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    background-color: #C7CCB4;
+    width: 1000px; 
+    height: 120%;
+    margin: 10% auto;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+  .primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBE4D2;
+    width: 90%;
+    height: 20%;
+    margin: 0 auto;
+  }
+    

@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+.nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: left;
+    margin-top: 100px;
+    margin: 0 auto;
+    width: 90%;
+    height: 70px;
+    gap: 120px;
+    list-style-type: none;
+    background-color: #4C5E6A;
+    color: white;
+    font-size: large;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBE4D2;
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    background-color: #C7CCB4;
+    width: 1000px; 
+    height: 550px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+ 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .question{
+    margin-top: 35px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    font-size: large;
+    flex-wrap: wrap;
+    }
+    
+  .header hr {
+    height: 0.2px;
+    background-color: gray;
+    width: 100%; 
+    padding: 0%;
+  }
+  
+  .header h1 {
+    margin-bottom: 10px;
+    color: #4C5E6A;
+  }
+  .header h2{
+    margin-left: 20px;
+  }
+
+  label{
+    font-size: large;
+  }
+
+  .footer {
+    margin-top: auto;
+    display: flex;
+  }
+  
+  .footer button {
+    margin-right: 10px;
+    padding: 8px 15px;
+    font-size: 1em;
+    border-color: #4C5E6A;
+    border-width: 0.2px;
+    border-radius: 10%;
+}
+.btn-secondary {
+    background-color: #FFFFFF;
+    color: #4C5E6A;
+    border: 2px solid #4C5E6A; 
+  }
+  
+  .btn-primary {
+    background-color: #4C5E6A;
+    color: #FFFFFF;
+    border: 2px solid #4C5E6A; 
+  }
+  
+  .footer button:hover {
+    opacity: 0.8; 
+  }
+  
+
+  .options input[type="radio"]{
+    width: 25px;
+    height: 18px;
+    align-items: center;
+  }
+  .options label {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: large;
+  }
+
+  
+

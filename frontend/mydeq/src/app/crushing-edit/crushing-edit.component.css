@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.main {
+    color: green;
+    margin-bottom: 5px;
+    margin: .5rem 3rem;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.info1 {
+    font-size: 18px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: 400;
+}
+
+/* Section List */
+.heading {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for headings */
+    justify-content: center;
+    margin: 0rem 6.2rem;
+    padding: 1rem 0;
+    align-items: center; /* Center align items vertically */
+    border-bottom: 1px solid #ccc; /* Add a bottom border for separation */
+}
+
+.heading > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading h2 {
+    margin: 0; 
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    margin: 0rem 4rem;
+}
+
+.section-div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Three columns for each section */
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.section-div img {
+    width: 25px;
+    height: 25px;
+    align-self: center; /* Align icons vertically in the middle */
+}
+
+.text {
+    font-size: 18px;
+}
+
+/* Certify Button */
+.certify {
+    position: relative;
+    top: 2rem;
+    left: 72%;
+    bottom: 5rem;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #EBE4D2; /* Light yellow background color */
+    color: #002766; /* Dark blue text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.certify:disabled {
+    background-color: #A9A9A9;
+    cursor: not-allowed;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    background-color: #C7CCB4;
+    width: 1000px; 
+    height: 120%;
+    margin: 10% auto;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+  .primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBE4D2;
+    width: 90%;
+    height: 20%;
+    margin: 0 auto;
+  }
+  .custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.custom-table th, .custom-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.custom-table th {
+    font-size: 18px;
+}
+
+.header-cell {
+    width: 33.33%;
+}
+.left-align {
+    text-align: left;
+}

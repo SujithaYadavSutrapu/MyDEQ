@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MaduComponent } from './madu.component';
+import { CrushDustPage3Component } from './crush-dust-page3.component';
 
-describe('MaduComponent', () => {
-  let component: MaduComponent;
-  let fixture: ComponentFixture<MaduComponent>;
+describe('CrushDustPage3Component', () => {
+  let component: CrushDustPage3Component;
+  let fixture: ComponentFixture<CrushDustPage3Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MaduComponent]
+      imports: [CrushDustPage3Component]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(MaduComponent);
+    fixture = TestBed.createComponent(CrushDustPage3Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

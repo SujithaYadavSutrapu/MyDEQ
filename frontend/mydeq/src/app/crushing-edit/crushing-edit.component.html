@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="nav rounded-top">
+        <p></p>
+        <h2>myDEQ</h2> 
+    </div>
+    <div class="primary">
+        <form>  
+            <div class="form-group">
+                <div class="header">
+                    <h1>Crushing and Screening License</h1>
+                    <hr> 
+                </div><br>
+                <label>Complete the following to submit the application.</label>
+<br>
+<table class="custom-table">
+    <tbody>
+    <tr>
+        <th class="header-cell">Section Name</th>
+        <th class="header-cell">Status</th>
+        <th class="header-cell">Edit</th>
+    </tr>
+    <tr *ngFor="let section of sections; let i = index">
+        <td>{{ section.name }}</td>
+        <td>{{ section.status }}</td>
+        <td (click)="changeStatus(i)">
+            <img src="../../assets/edit.svg" alt="edit" />
+        </td>
+    </tr>
+</tbody>
+</table><br>
+<div class="footer">
+    <button class="certify" [disabled]="!isCertifyButtonEnabled()" (click)="navigateToCertifyPage()">Continue to Certify</button>
+                </div>  <br><br>
+            </div>
+        </form>
+    </div>
+</div>

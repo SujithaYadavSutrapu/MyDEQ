@@ -1,0 +1,61 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  background-color: #C7CCB4;
+  width: 1000px; 
+  height: 120%;
+  margin: 10% auto;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+.primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EBE4D2;
+  width: 90%;
+  height: 20%;
+  margin: 0 auto;
+}
+  
+  .help-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .head {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .secondary {
+    /* Add styles for the secondary div if needed */
+  }
+  
+  .ol-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ol-list li {
+    background-color: #d8dec4;
+    color: #000000;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .ol-list li:hover {
+    background-color: #999e89;
+  }
+  

@@ -1,0 +1,75 @@
+
+  .small-text {
+    font-size: 15px;
+    padding: 12px 5px;
+
+  }
+  .name{
+    color: rgb(0, 0, 0);
+    margin-bottom: 3px;
+    font-size: 18px;
+  }
+  .head{
+    color: #4C5E6A;
+    font-size: 18px;
+  }
+  .instruction{
+    font-size: 15px;
+  }
+  .showText{
+    margin: 15px;
+    margin-left: 10px;
+    background-color: #ecf1d6;
+    width: fit-content;
+    padding: 5px;
+    }
+    .radio{
+        align-items: center;
+    }
+    input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #4C5E6A;
+  color: white;
+}
+
+input[type="file"] {
+  display: block;
+ 
+  margin-top: 5px;
+}
+.file-input-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #007bff;
+  cursor: pointer;
+
+
+}
+
+.file-input-container input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file-input-container label {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-input-container label:hover {
+  background-color: #0056b3;
+}

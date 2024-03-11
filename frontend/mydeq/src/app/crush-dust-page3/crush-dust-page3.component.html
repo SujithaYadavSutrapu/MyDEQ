@@ -1,0 +1,48 @@
+
+<div class="container">
+    <div class="nav rounded-top">
+      <p></p>
+
+      <h2>myDEQ</h2> 
+    </div>
+
+    <div class="primary">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <div class="header">
+            <h1>Get a Crushing & Screening General Permit</h1>
+            <hr> 
+          </div>
+
+          <div class="question">
+            <label>
+            Maricopa County requires you to submit a Maricopa County Rule 316 Dust Control Plan.            
+          </label><br><br>
+          <div class="instruction"  style="padding-top: 5px;">
+            Select one option and click Continue
+          </div><br>
+          <div class="options">
+            <input type="radio" id="option1" name="option" value="option1" formControlName="option" (click)="onUpload()">
+            <label for="option1">Upload your completed Rule 316 Dust Control Plan.</label><br>
+            <div class="showText" *ngIf="showText">
+Upload your completed Rule 316 Dust Control Plan
+<br>
+<label style="font-size: small;"> Click Choose file to choose a file from your computer. Then click UPLOAD.</label>
+<div>
+  <label> PDF, DOC, DOCX files only 20MB max per file. </label>
+  <br><br>
+  <input type="file" (change)="onUploadEvent($event)">
+</div>
+</div>
+            <input type="radio" id="option2" name="option" value="option2" formControlName="option" (click)="onUpload()">
+            <label for="option2">I don't have a Rule 316 Dust Control Plan.</label>
+          </div>  
+         </div>
+          <div class="footer">
+            <button class="btn btn-secondary rounded btn-lg" (click)="onPrevious()">Previous</button>
+            <button class="btn btn-primary rounded btn-lg" (click)="onSubmit()">Next</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

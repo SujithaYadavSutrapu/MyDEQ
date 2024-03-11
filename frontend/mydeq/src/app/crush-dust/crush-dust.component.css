@@ -1,0 +1,10 @@
+.showText{
+margin: 15px;
+margin-left: 10px;
+background-color: #ecf1d6;
+width: fit-content;
+padding: 5px;
+}
+.radio{
+    align-items: center;
+}
