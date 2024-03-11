@@ -1,0 +1,56 @@
+<div class="dynamic-form">
+    <div *ngFor="let category of categories" class="category">
+      <h3>{{ category.name }}</h3>
+      <ul>
+        <div *ngFor="let element of category.elements">
+          <label>
+            <input type="button" name="{{ category.name }}" [(ngModel)]="category.selected" (click)="onCheckbox(element)" [value]="element">
+            {{ element }}
+          </label>
+        </div>
+      </ul>
+    </div>
+    <button (click)="getSelectedElements()">Get Selected Elements</button>
+  </div>
+  
+<div class="container">
+  <div class="nav rounded-top">
+    <p></p>
+    <h2>myDEQ</h2> 
+  </div>
+
+  <div class="primary">
+    <form>
+    
+      <div class="form-group">
+        <div class="header">
+          <h1>Get a Crushing & Screening General Permit</h1>
+          <hr>
+        </div>
+        <div class="question">
+        Which type of permit/registration/certificate do you need?
+        </div>       
+        <div class="instruction">
+          Select one option and click Continue
+        </div>
+        <div class="dynamic-form">
+          <div *ngFor="let category of categories" class="category">
+            <h3>{{ category.name }}</h3>
+            <ul>
+              <div *ngFor="let element of category.elements">
+                <label>
+                  <input type="button" name="{{ category.name }}" [(ngModel)]="category.selected" (click)="onCheckbox(element)" [value]="element">
+                  {{ element }}
+                </label>
+              </div>
+            </ul>
+          </div>
+          <button (click)="getSelectedElements()">Get Selected Elements</button>
+        </div>
+      </div>
+     
+      </form>
+      </div>
+  </div>
+
+ 
