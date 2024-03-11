@@ -10,9 +10,11 @@ import { CrushingOrganizationComponent } from './crushing-organization/crushing-
 import { CrushingIndexComponent } from './crushing-index/crushing-index.component';
 import { CrushingEditComponent } from './crushing-edit/crushing-edit.component';
 import { SeptageEditComponent } from './septage-edit/septage-edit.component';
+import { CrushEquipPageComponent } from './crush-equip-page/crush-equip-page.component';
 
 export const routes: Routes = [
     {
+        
         path: 'crush-dust',
         component: CrushDustComponent
        
@@ -35,7 +37,8 @@ export const routes: Routes = [
     {'path':'crushorg',component:CrushingOrganizationComponent},
     {'path':'crushindex',component:CrushingIndexComponent },
     {'path':'crushedit',component:CrushingEditComponent},
-    {'path':'septage',component:SeptageEditComponent}
+    {'path':'septage',component:SeptageEditComponent},
+    {'path': 'equip', component:CrushEquipPageComponent}
 
 ];
 @NgModule({
