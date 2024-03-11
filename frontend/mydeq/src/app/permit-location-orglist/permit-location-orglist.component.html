@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="content-container">
+        <h1>Get a Crushing and Screening Permit</h1>
+        <div class="additional-info">
+            <h2>Where will the permit/registration/certificate activity be conducted?</h2>
+            <p>Please select a place from the list or add a new place and click continue.</p>
+        </div>
+        <app-organization-list-table></app-organization-list-table>
+        <div class="add-new-place">
+            <mat-radio-button value="add-new" #addNewRadioButton>
+                <span class="radio-button-text">I need to add a place that is not listed here.</span>
+            </mat-radio-button>
+        </div>
+        <div class="button-container">
+            <button class="back-button">Back</button>
+            <button class="continue-button" (click)="continue()">Continue</button>
+        </div>
+
+    </div>
+</div>

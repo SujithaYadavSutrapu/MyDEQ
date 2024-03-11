@@ -1,0 +1,116 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+  }
+  
+  .form-container {
+    position: relative;
+    width: 50%;
+    height: 85%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color:#D3D3D3;
+  }
+  
+  .heading {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 0;
+  }
+  
+  .question {
+    margin-bottom: .5rem; 
+  }
+  
+  .question-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size:24px;
+  }
+  
+  .tooltip {
+    cursor: pointer;
+    font-size: smaller; 
+    position: relative; 
+    top: -5px; 
+  }
+  
+  .input-group {
+    margin: 1rem .5rem;
+    font-size:22px;
+    display:flex;
+    gap:1rem;
+    align-items: center;
+    height:50px;
+  }
+  .input-group label {
+    
+    width: 150px; /* Adjust width as needed */
+    margin-right: 10px;
+  }
+  .input-group input {
+    width : 300px;
+    height:25px;
+    
+  }
+  .radio-group input[type="radio"] {
+    transform: scale(1.5); 
+  }
+  
+  .radio-group {
+    margin : 10px 5px;
+  }
+  .radio-group label{
+    font-size:20px;
+    margin-left : 1rem;
+    
+  }
+  .radio-group input {
+    margin:.70rem .5rem;
+  }
+  
+
+  .address-fields .input-group {
+    margin-bottom: 3px;
+    margin-left:5rem;
+    
+  }
+  
+  .address-fields .input-group label {
+    width: 150px; /* Adjust width as needed */
+    margin-right: 10px;
+  }
+  
+  .address-fields .input-group input {
+    width : 300px;
+    height:25px;
+  }
+  .bottom-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    right:20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .back-button,
+  .continue-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+  }
+  

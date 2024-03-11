@@ -1,0 +1,59 @@
+<div class="center-container">
+    <div class="form-container">
+        <h2 class="heading">GET A CRUSHING AND SCREENING GENERAL PERMIT</h2>
+        <form (ngSubmit)="continue()">
+            <!-- Question 1: Place Name -->
+            <div class="question">
+                <div class="question-text">
+                    What is the name of the place
+                    <span class="tooltip" title="Give your place name">&#9432;</span>
+                    that you need to add?
+                </div>
+                <div>Provide the requested information and continue.</div>
+                <div class="input-group">
+                    <label for="placeName">Place Name:</label>
+                    <input type="text" id="placeName" name="placeName" [(ngModel)]="addressData.placeName" required>
+                </div>
+            </div>
+
+            <!-- Question 2: Location -->
+            <div class="question">
+                <div class="question-text">Where is this place located?</div>
+                <div class="radio-group">
+                    <input type="radio" id="addressOption" name="location" value="address"
+                        (click)="toggleAddressFields()" required>
+                    <label for="addressOption">I have an address (preferred)</label>
+                    <br>
+                    <div *ngIf="showAddressFields" class="address-fields">
+                        <div class="input-group">
+                            <label for="addressLine1">Address Line 1:</label>
+                            <input type="text" id="addressLine1" name="addressLine1"
+                                [(ngModel)]="addressData.addressLine1" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="addressLine2">Address Line 2:</label>
+                            <input type="text" id="addressLine2" name="addressLine2"
+                                [(ngModel)]="addressData.addressLine2">
+                        </div>
+                        <div class="input-group">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" [(ngModel)]="addressData.city" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="zipCode">Zip Code:</label>
+                            <input type="text" id="zipCode" name="zipCode" [(ngModel)]="addressData.zipCode" required>
+                        </div>
+                    </div>
+                    <input type="radio" id="mapOption" name="location" value="map">
+                    <label for="mapOption">Select from map</label>
+                </div>
+            </div>
+
+            <!-- Bottom Buttons -->
+            <div class="bottom-buttons">
+                <button type="button" class="back-button" (click)="back()">Back</button>
+                <button type="submit" class="continue-button" [disabled]="!addressData.placeName">Continue</button>
+            </div>
+        </form>
+    </div>
+</div>

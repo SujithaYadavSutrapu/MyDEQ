@@ -1,0 +1,13 @@
+<div class="overlay-content">
+    <h2>Address Match</h2>
+    <p>Please review the address information:</p>
+    <ul>
+        <p>Place Name: {{ addressData?.placeName }}</p>
+        <p>Address Line 1: {{ addressData?.addressLine1 }}</p>
+        <p>Address Line 2: {{ addressData?.addressLine2 }}</p>
+        <p>City: {{ addressData?.city }}</p>
+        <p>Zip Code: {{ addressData?.zipCode }}</p>
+    </ul>
+    <button (click)="onContinue()">Continue</button>
+    <button (click)="onCancel()">Cancel</button>
+</div>
