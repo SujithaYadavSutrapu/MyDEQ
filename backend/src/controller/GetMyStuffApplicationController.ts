@@ -36,12 +36,12 @@ class MyStuff{
             const params = {
                 TableName: 'application',
                 FilterExpression: '#st = :app_status AND ltf_id = :ltf_id',
-                ProjectionExpression: 'category, place_name, started_on, #st, app_type, companyName, expiryDate',
+                ProjectionExpression: 'category,pk, place_name, started_on, #st, app_type, companyName, expiryDate',
                 ExpressionAttributeNames: {
                     '#st': 'app_status',
                 },
                 ExpressionAttributeValues: {
-                    ':app_status': 'In Progress',
+                    ':app_status': 'Issued',
                     ':ltf_id': ltf_id,
                 },
             };
