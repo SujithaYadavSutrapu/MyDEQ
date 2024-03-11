@@ -7,8 +7,7 @@ const dynamoDB = new AWS.DynamoDB.DocumentClient({
 });
 class ApplicationController {
     async getAllApplications(req: Request, res: Response) {
-        const { user_id } = req.body;
-       
+        const { user_id } = req.params;
         const params = {
             TableName: "application",
             KeyConditionExpression: "pk = :user_id",
