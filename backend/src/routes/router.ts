@@ -1,11 +1,11 @@
 import express from 'express';
 import applicationController from '../controller/ApplicationController'
 
-const router = express.Router();
+const ApplicationRouter = express.Router();
 
-router.get('/applications',applicationController.getAllApplications )
-router.post('/insertapplications',applicationController.insertApplications)
-router.get('/searchApplication/:user_id',applicationController.searchApplication)
-router.delete('/deleteApplication', applicationController.deleteApplication)
+ApplicationRouter.get('/applications',applicationController.getAllApplications )
+ApplicationRouter.post('/insertapplications',applicationController.insertApplications)
+ApplicationRouter.get('/searchApplication/:user_id',applicationController.searchApplication)
+ApplicationRouter.delete('/deleteApplication', applicationController.deleteApplication)
 
-export default router;
+export default ApplicationRouter;
