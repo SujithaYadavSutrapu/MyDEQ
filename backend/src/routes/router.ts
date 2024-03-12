@@ -6,6 +6,6 @@ const router = express.Router();
 router.get('/applications',applicationController.getAllApplications )
 router.post('/insertapplications',applicationController.insertApplications)
 router.get('/searchApplication/:user_id',applicationController.searchApplication)
-router.delete('/deleteApplication/:application_id', applicationController.deleteApplication)
+router.delete('/deleteApplication', applicationController.deleteApplication)
 
 export default router;

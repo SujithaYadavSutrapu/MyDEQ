@@ -113,19 +113,19 @@ async searchApplication(req: Request, res: Response) {
     }
 }
 
-async deleteApplication(req: Request, res:Response){
-    const { application_id } = req.params;
+async deleteApplication(req: Request, res: Response) {
+    const { user_id, application_id } = req.body;
 
-    if (!application_id) {
-        return res.status(400).json({ error: 'Application ID is required' });
+    if (!user_id || !application_id) {
+        return res.status(400).json({ error: 'User ID and Application ID are required' });
     }
 
     try {
         const params = {
             TableName: 'application',
             Key: {
-                pk: application_id,
-                sk: 'APPLICATION' 
+                pk: user_id,
+                sk: application_id,
             }
         };
 
